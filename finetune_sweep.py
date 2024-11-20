@@ -58,6 +58,7 @@ if __name__ == '__main__':
 
     # LOAD OPEN AI MODEL
     clip_model, preprocess = clip.load("ViT-B/32")
+    clip_model.float()
 
     # LOAD THE DATA
     custom_dataset = ImageTextDataset(
